@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+
+
+    <main class="text-center mt-20">
+
+        <div class="mockup-phone border-primary">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-1">
+    
+    
+<!-- taka  -->
+ <div>
+    <h1 id="CurBalance" class="text-5xl font-bold">1000</h1>
+    <p>Avalilable Balance</p>
+ </div>
+
+ <div >
+
+    <button id="addMoney" class="btn btn-success text-white">Add Money</button>
+    <button id="cashOut" class="btn btn-error text-white">CashOut</button>
+    <button id="Transition" class="btn btn-warning text-white">Transition</button>
+
+ </div>
+
+
+ <!-- add money start  -->
+
+ 
+ <div id="add" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+    <form class="card-body">
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">Amount</span>
+        </label>
+        <input id="inpAmountAdd" type="text" placeholder="Enter your Amount" class="input input-bordered rounded-full" required />
+      </div>
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">4 Digit Pin</span>
+        </label>
+        <input id="inpPinAdd" type="password" placeholder="4 digit pin" class="input input-bordered rounded-full" required />
+
+      </div>
+      <div class="form-control mt-6">
+        <button id="btnAdd" class="btn btn-success text-white rounded-full">Add Money</button>
+      </div>
+    </form>
+  </div>
+
+
+
+ <!-- add money end -->
+
+
+
+
+
+
+ 
+ <!--  ! cashout  start -->
+
+ 
+ <div id="out" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+    <form class="card-body">
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">Amount</span>
+        </label>
+        <input id="inpAmountOut" type="text" placeholder="Enter your Amount" class="input input-bordered rounded-full" required />
+      </div>
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">4 Digit Pin</span>
+        </label>
+        <input id="inpPinOut" type="password" placeholder="4 digit pin" class="input input-bordered rounded-full" required />
+
+      </div>
+      <div class="form-control mt-6">
+        <button id="btnOut" class="btn btn-error text-white rounded-full">CashOut</button>
+      </div>
+    </form>
+  </div>
+
+
+
+ <!-- ! cashout end-->
+
+
+
+ <!-- ! Transition starts  -->
+
+
+
+
+    <div id="container" class="hidden">
+<h1 class="text-4xl font-bold">Transition History</h1>
+    </div>
+
+
+
+
+
+
+
+
+
+
+ <!-- ! Transition ends here  -->
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+    </main> 
+
+    <script src="js/utilities.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/cashout.js"></script>
+    <script src="js/features.js"></script>
+    
+</body>
+</html>
